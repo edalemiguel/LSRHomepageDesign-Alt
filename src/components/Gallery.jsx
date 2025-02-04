@@ -53,11 +53,13 @@ const Gallery = () => {
         ))}
       </div>
 
+      {/* Pagination */}
       <div className="pagination">
         {Array.from({ length: Math.ceil(images.length / imagesPerPage) }).map((_, index) => (
           <span
             key={index}
             className={`dot ${index === Math.floor(currentIndex / imagesPerPage) ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index * imagesPerPage)}  
           ></span>
         ))}
       </div>

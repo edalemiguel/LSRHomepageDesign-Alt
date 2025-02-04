@@ -129,6 +129,7 @@ section.hero .hero-button:hover {
   color: #FF6F61;
 }
 
+
 /* Gallery Section */
 .gallery {
   display: flex;
@@ -141,6 +142,7 @@ section.hero .hero-button:hover {
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  position: relative; 
 }
 
 /* Gallery Container */
@@ -150,6 +152,7 @@ section.hero .hero-button:hover {
   width: 100%;
   justify-content: center;
   overflow: hidden;
+  position: relative; 
 }
 
 /* Gallery Item */
@@ -160,6 +163,7 @@ section.hero .hero-button:hover {
   overflow: hidden;
   width: 350px;
   text-align: center;
+  position: relative;
 }
 
 /* Gallery Item Image */
@@ -200,9 +204,41 @@ section.hero .hero-button:hover {
   color: #888;
 }
 
+/* Pagination Dots */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+  width: 100%;
+  position: absolute;
+  bottom: 10px; 
+}
+
+/* Dot styling */
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #FF6F61; 
+}
+
+.dot:hover {
+  background-color: #FF6F61;
+}
+
 /* Buttons */
 .prev-btn,
 .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -216,12 +252,12 @@ section.hero .hero-button:hover {
 
 /* Left Button */
 .prev-btn {
-  margin-right: 20px;
+  left: 10px;
 }
 
 /* Right Button */
 .next-btn {
-  margin-left: 20px;
+  right: 10px;
 }
 
 /* Hover Effect for Buttons */

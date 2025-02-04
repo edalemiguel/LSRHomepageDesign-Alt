@@ -20,6 +20,13 @@ This design was created as an alternative homepage concept for the LSR website. 
 ---
 
 
+## 📸 Screenshots  
+![Homepage Screenshot](src/Assets/Homepage.png)
+
+
+---
+
+
 ### **🛠️ Technologies Used**  
 - React  
 

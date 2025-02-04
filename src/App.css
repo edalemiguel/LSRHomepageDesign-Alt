@@ -1,0 +1,382 @@
+/* General Body */
+body {
+  font-family: 'Linden Hill', sans-serif;
+  background-color: #FAF3E0;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #F5F5DC;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: -35px;
+}
+
+header .logo img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+/* Tagline Styling */
+.tagline {
+  font-family: 'Linden Hill', serif;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .logo .tagline {
+  font-family: 'Linden Hill', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-top: -15px;
+  margin-left: 108px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Social Media Icons in Header */
+header .social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header .social-icons a {
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+header .social-icons a:hover {
+  color: #0073e6;
+}
+
+/* Main Navigation */
+nav.main-nav {
+  background-color: #3D8E77;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav.main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-flex;
+  gap: 30px;
+}
+
+nav.main-nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+nav.main-nav ul li a:hover {
+  background-color: #D1D8E0;
+}
+
+/* Hero Section */
+section.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #F5F5DC;
+  color: orange;
+  text-align: center;
+}
+
+section.hero h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+section.hero .hero-button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+section.hero .hero-button {
+  background-color: #FF6F61;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+section.hero .hero-button:hover {
+  background-color: #D1D8E0;
+  color: #FF6F61;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 40px;
+  background-color: #F5F5DC;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Gallery Container */
+.gallery-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Gallery Item */
+.gallery-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
+  text-align: center;
+}
+
+/* Gallery Item Image */
+.gallery-item img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-bottom: 4px solid #FF6F61;
+}
+
+/* Gallery Info */
+.gallery-info {
+  padding: 15px;
+  background-color: #F5F5DC;
+  border-top: 2px solid #FF6F61;
+  border-radius: 0 0 12px 12px;
+  text-align: left;
+}
+
+.gallery-info .category,
+.gallery-info .description-author,
+.gallery-info .date {
+  margin: 5px 0;
+}
+
+.gallery-info .category {
+  font-weight: 600;
+  color: #F39C12;
+}
+
+.gallery-info .description-author {
+  font-size: 14px;
+  color: #555;
+}
+
+.gallery-info .date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Buttons */
+.prev-btn,
+.next-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+/* Left Button */
+.prev-btn {
+  margin-right: 20px;
+}
+
+/* Right Button */
+.next-btn {
+  margin-left: 20px;
+}
+
+/* Hover Effect for Buttons */
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.read-more-link {
+  color: #FF6F61;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.read-more-link::after {
+  content: "...";
+  margin-left: 5px;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: #3D8E77;
+  color: white;
+  position: relative;
+}
+
+footer .contact-us {
+  flex: 1;
+}
+
+footer .follow-us {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: auto;
+}
+
+footer .follow-us a {
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .follow-us a:hover {
+  color: #FF6F61;
+}
+
+footer .nsc-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+footer .nsc-links img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer .nsc-links a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+footer .nsc-links a:hover {
+  color: #FF6F61;
+}
+
+/* Footer Icons - Archive, Help, Home */
+footer .footer-icons {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+footer .footer-icon {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .footer-icon:hover {
+  color: #FF6F61;
+}
+
+.contact-us .email {
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.contact-us .email i {
+  margin-right: 8px;
+}
+
+
+
+/* For the Archive, Help, and Home Botton in Footer */
+    /*   To be deleted once pages are created */
+
+.footer-icon {
+  background: none; 
+  border: none; 
+  padding: 0; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer; 
+  font-size: 18px; 
+}
+
+.footer-icon i {
+  margin-right: 8px; 
+}
+
+.footer-icon:hover {
+  color: #007bff; 
+}
+
+.footer-icon:focus {
+  outline: none; 
+}
+
+.menu-icon, .home-icon {
+  background: none; 
+  border: none; 
+  padding: 0; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer; 
+  font-size: 18px; 
+}
+
+
+
+
